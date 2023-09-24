@@ -12,7 +12,7 @@ export class AppComponent implements OnInit {
   private readonly ngUnsubscribe$ = new Subject<boolean>();
 
   constructor(@Inject(AppService) private readonly appService: AppService) {}
-
+ // try
   ngOnInit(): void {
     this.appService.isUserAuthenticated()
       .pipe(takeUntil(this.ngUnsubscribe$))
