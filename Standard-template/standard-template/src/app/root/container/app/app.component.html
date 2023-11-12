@@ -1,0 +1,8 @@
+<div *ngIf="!isAuthenticated; else appTemplate">
+  <!-- <app-login></app-login> -->  <!--For application login flow -->
+</div>
+<ng-template #appTemplate>
+  <app-layout>
+    <router-outlet></router-outlet>
+  </app-layout>
+</ng-template>
