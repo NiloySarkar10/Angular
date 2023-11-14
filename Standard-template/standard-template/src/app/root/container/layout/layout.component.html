@@ -1,12 +1,13 @@
-<div class="wrapper container-fluid w-100 p-0 vh-100 overflow-hidden">
-    <!-- <app-header></app-header> -->
+<app-header></app-header>
+<div class="wrapper container-fluid w-100 p-3 vh-100 overflow-hidden">
     <div class="row g-0">
-        <div class="col-2">
+        <!-- <div class="col-2"> -->
             <!-- <app-left-navbar></app-left-navbar> -->
-        </div>
-        <div class="content col-10 h-100">
+        <!-- </div> -->
+        <div class="content col-12 h-100">
             <ng-content></ng-content> <!-- For content projection -->
         </div>
     </div>
     <!-- <app-loader [isLoading]="isLoading$ | async"></app-loader> -->
 </div>
+<app-footer></app-footer>
